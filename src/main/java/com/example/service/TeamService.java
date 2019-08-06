@@ -25,4 +25,13 @@ public class TeamService {
 		return teamList;
 	}
 	
+	/**
+	 * チーム情報を表示.
+	 * @param id チームID
+	 * @return チーム情報
+	 */
+	public Team showDetail(Integer id) {
+		Team team = teamRepository.load(id);
+		return team;
+	}
 }

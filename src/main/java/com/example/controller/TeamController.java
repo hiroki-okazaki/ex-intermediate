@@ -16,9 +16,26 @@ public class TeamController {
 	
 	
 	
+	/**
+	 * チーム一覧を表示する
+	 * @param model リクエストパラメーター
+	 * @return チームリスト
+	 */
 	@RequestMapping("/teamList")
     public String teamList(Model model) {
 		model.addAttribute("teamList",teamService.showList());
 		return "team/teamList";
+	}
+	
+	/**
+	 * チーム情報を表示
+	 * @param id ID
+	 * @param model リクエストパラメーター
+	 * @return チーム詳細
+	 */
+	@RequestMapping("/teamDetail")
+	public String showDetail(String id,Model model) {
+		model.addAttribute("teamDetail",teamService.showDetail(Integer.parseInt(id)));
+		return "team/teamDetail";
 	}
 }

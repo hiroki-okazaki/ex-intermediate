@@ -24,7 +24,7 @@ public class Team {
 	 */
 	private String headquarters;
 	/**
-	 * 創設日.
+	 * 発足.
 	 */
 	private String inanguration;
 	/**
