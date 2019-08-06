@@ -5,7 +5,7 @@ package com.example.domain;
  * チーム情報を表すクラス.
  * @author hirokiokazaki
  */
-public class team {
+public class Team {
 
 	/**
 	 * チームID.
